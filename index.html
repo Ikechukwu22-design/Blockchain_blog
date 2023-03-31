@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./blockchain.css">
+    <title>Blockchain Africa</title>
+</head>
+<style>
+    
+    body {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.afriq {
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.afr {
+    width: 1080px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     height: 80px;
+     align-items: center;
+
+}
+
+.order {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+ .nav {
+    text-decoration: none;
+    color: #161d2c;;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dropbtn {
+    display: inline-block;
+    text-align: center;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: #77ac49;
+}
+
+li .dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #161d2c;
+min-width: 180px;
+z-index: 1;
+
+}
+
+.dropdown-content a {
+color: #b8b3b3;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+font-size: 12px;
+font-family: inherit;
+}
+
+.dropdown-content a:hover {
+color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.sect {
+width: 1080px;
+margin: 30px auto;
+display: grid;
+grid-template-columns: 1fr 2fr 2fr;
+grid-column-gap: 30px;
+vertical-align: center;
+
+}
+
+.flex-item {
+vertical-align: ;
+}
+
+.box-1 {
+width: 700px;
+height: 500px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/space-5000696_640.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+margin-top: 20px;
+}
+
+
+.crypto {
+padding-left: 30px;
+bottom: 60px;
+position: absolute;
+}
+
+.news {
+background: #ffb400;
+margin-left: 9px;
+margin-bottom: 10px;
+padding: 4px 7px;
+letter-spacing: 0.5px;
+width: 95px;
+border-radius: 3px;
+border: none;
+color: #fff;
+font-size: small;
+cursor: pointer;
+}
+
+.news:hover {
+background: #77ac49;
+}
+
+.trade {
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+padding: 4px 7px;
+margin: ;
+
+}
+
+.coin {
+border-radius: 3px;
+line-height: 1.16em;
+padding: 1px 10px 2px;
+background: #161d2c;
+letter-spacing: -1.8px;
+font-weight: 100;
+cursor: pointer;
+font-size: 2.2em;
+
+}
+
+.box-2 {
+width: 350px;
+height: 250px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/01/china-162389_640-1.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+margin-top: 15px;
+}
+
+.crypto-2 {
+padding-left: 30px;
+position: absolute;
+top: 40px;
+}
+
+.news-2 {
+background: #ffb400;
+margin-left: 9px;
+margin-bottom: 10px;
+padding: 4px 7px;
+letter-spacing: 0.5px;
+width: 70px;
+border-radius: 3px;
+border: none;
+color: #fff;
+font-size: small;
+cursor: pointer;
+}
+
+.news-2:hover {
+background: #77ac49;
+}
+
+.trade-2 {
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+padding: 4px 7px;
+}
+
+.coin-2 {
+border-radius: 3px;
+line-height: 1.16em;
+padding: 1px 10px 2px;
+background: #161d2c;
+letter-spacing: -1.8px;
+font-weight: 100;
+cursor: pointer;
+font-size: 1.5em;
+
+}
+
+.box-3 {
+width: 350px;
+height: 250px;
+background: url(https://www.blockchainafrica.io/wp-content/uploads/2023/02/binance-logo-6219389_640-1-640x428.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+margin-top: 15px;
+}
+
+.crypto-3 {
+padding-left: 30px;
+position: absolute;
+top: 40px;
+}
+
+.news-3 {
+background: #ffb400;
+margin-left: 9px;
+margin-top: 2px;
+padding: 4px 7px;
+letter-spacing: 0.5px;
+width: 95px;
+border-radius: 3px;
+border: none;
+color: #fff;
+font-size: small;
+cursor: pointer;;
+}
+
+.news-3:hover {
+background: #77ac49;
+}
+
+.trade-3 {
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+padding: 4px 7px;
+}
+
+.coin-3 {
+border-radius: 3px;
+line-height: 1.16em;
+padding: 1px 10px 2px;
+background: #161d2c;
+letter-spacing: -1.8px;
+font-weight: 100;
+cursor: pointer;
+font-size: 1.5em;
+
+}
+
+.sect-1 {
+width: 1080px;
+margin: 30px auto;
+display: flex;
+column-gap: 1.5em;
+
+}
+
+.box-4 {
+width: 350px;
+height: 250px;
+background: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1138831797-612x612-1.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypto-4 {
+padding-left: 30px;
+position: absolute;
+top: 40px;
+}
+
+.news-4 {
+background: #ffb400;
+margin-left: 9px;
+margin-bottom: 10px;
+padding: 4px 7px;
+letter-spacing: 0.5px;
+width: 109px;
+border-radius: 3px;
+border: none;
+color: #fff;
+font-size: small;
+cursor: pointer;
+}
+
+.news-4:hover {
+background: #77ac49;
+}
+
+.trade-4 {
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+padding: 4px 7px;
+}
+
+.coin-4 {
+border-radius: 3px;
+line-height: 1.16em;
+padding: 1px 10px 2px;
+background: #161d2c;
+letter-spacing: -1.8px;
+font-weight: 100;
+cursor: pointer;
+font-size: 1.5em;
+
+}
+
+.box-5 {
+width: 350px;
+height: 250px;
+background: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1166821901-612x612-1-612x428.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypto-5 {
+padding-left: 30px;
+position: absolute;
+top: 40px;
+}
+
+.news-5 {
+background: #ffb400;
+margin-left: 9px;
+margin-bottom: 10px;
+padding: 4px 7px;
+letter-spacing: 0.5px;
+width: 95px;
+border-radius: 3px;
+border: none;
+color: #fff;
+font-size: small;
+cursor: pointer;
+}
+
+.news-5:hover {
+background: #77ac49;
+}
+
+.trade-5 {
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+padding: 4px 7px;
+}
+
+.coin-5 {
+border-radius: 3px;
+line-height: 1.16em;
+padding: 1px 10px 2px;
+background: #161d2c;
+letter-spacing: -1.8px;
+font-weight: 100;
+cursor: pointer;
+font-size: 1.5em;
+
+}
+
+.box-6 {
+width: 350px;
+height: 250px;
+background: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1138831797-612x612-1.jpg);
+position: relative;
+}
+
+.crypto-6 {
+padding-left: 30px;
+position: absolute;
+top: 10px;
+}
+
+.news-6 {
+background: #ffb400;
+margin-left: 9px;
+margin-bottom: 10px;
+padding: 4px 7px;
+letter-spacing: 0.5px;
+width: 95px;
+border-radius: 3px;
+border: none;
+color: #fff;
+font-size: small;
+cursor: pointer;
+}
+
+.news-56hover {
+background: #77ac49;
+}
+
+.trade-6 {
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+padding: 4px 7px;
+}
+
+.coin-6 {
+border-radius: 3px;
+line-height: 1.16em;
+padding: 1px 10px 2px;
+background-image: #161d2c;
+letter-spacing: -1.8px;
+font-weight: 100;
+cursor: pointer;
+font-size: 1.5em;
+
+}
+
+.navy {
+background-color: #00527a;
+color: #fff;
+height: 200px;
+}
+
+.binance {
+width: 1080px;
+margin: 30px auto;
+display: flex;
+justify-content: space-between;
+height: 200px;
+align-items: center;
+}
+
+.binance-1 {
+
+}
+
+.date {
+text-decoration: none;
+color: rgb(173, 174, 177);
+}
+
+.russ {
+display: flex;
+justify-content: space-between;
+column-gap: 20px;
+}
+
+.blog-post {
+width: 1080px;
+margin: 30px auto;
+display: grid;
+grid-template-columns: 70% 30%;
+}
+
+.blog {
+border-right: 1px solid #e9e1e1;
+}
+
+.post {
+width: 700px;
+height: 70px;
+background-color: #f7f7f7;
+border-color: #d4d0d0;
+border-radius: 5px;
+border: 1px solid transparent;
+padding: 28px 28px;
+}
+
+.rcent {
+margin-top: 40px;
+font-weight: normal;
+letter-spacing: 0;
+
+}
+
+.crypt {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/space-5000696_640-360x266.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-1 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/01/china-162389_640-1-360x266.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-2 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/money-576443_640-360x266.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-3 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/02/binance-logo-6219389_640-1-360x266.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-4 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1138831797-612x612-1-360x266.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-5 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1166821901-612x612-1-360x266.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-6 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/putin-3520074_640-360x266.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-7 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-image: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1364339598-612x612-1-360x266.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypt-8 {
+width: 220px;
+height: 190px;
+border-radius: 5px;
+background-color: url(https://www.blockchainafrica.io/wp-content/uploads/2023/03/coins-159889_640-360x266.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.crypy- {
+    margin-bottom: 20px;
+}
+
+.crypt-img {
+background: #77ac49;
+position: absolute;
+bottom: 20px;
+padding: 4px 7px;
+letter-spacing: 0.5px;
+width: 125px;
+border-radius: 0 3px 3px 0;
+border: none;
+color: #fff;
+text-decoration: none;
+cursor: pointer;
+
+}
+
+.crypt-img:hover {
+background-color: #ffb400;
+}
+
+.cryp {
+text-decoration: none;
+font-weight: 300;
+font-size: 0.938em;
+line-height: 1.65em;
+margin-top: 0.5em;
+color: #000000;
+}
+
+.crypt-2 {
+font-weight: 300;
+font-size: 1.2rem;
+line-height: 1.65em;
+margin-top: 0.5em;
+width: 250px;
+}
+
+.ctrl-side {
+width: 900px;
+display: flex;
+column-gap: px;
+}
+
+
+
+.comm {
+letter-spacing: 8px;
+}
+
+.trend {
+font-weight: bold;
+letter-spacing: 1px;
+font-size: 25px;
+}
+
+.view {
+color: #161d2c;
+border: 2px solid #f2f2f5;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 11px;
+padding: 20px 50px;
+letter-spacing: 0.5px;
+   
+}
+
+.view:hover {
+background: #77ac49;
+}
+
+.views {
+padding-left: 30px;
+}
+
+.view_1 {
+color: #161d2c;
+border: 2px solid #f2f2f5;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 11px;
+padding: 20px 200px;
+letter-spacing: 0.5px;
+
+}
+
+.view_1:hover {
+background: #77ac49;
+}
+
+.ico {
+background-color: #f7f7f7;
+height: 1000px;
+margin-top: 35px;
+}
+
+.ico-1 {
+width: 1080px;
+margin: 30px auto;
+padding-top: 80px;
+}
+
+.upper {
+text-decoration: none;
+color: #000;
+
+}
+
+.span-1 {
+font-size: 30px;
+letter-spacing: 0.2px;
+}
+
+.active {
+text-decoration: none;
+color: #333;
+margin-bottom: 0;
+background: #fff;
+border: 1px solid #ddd;
+font-size: 16px;
+font-weight: bold;
+border-bottom-color: transparent;
+padding: 10px 15px;
+border-radius: 4px 4px 0 0;
+box-shadow: none;
+position: relative;
+word-wrap: break-word;
+}
+
+.upcom, .past {
+text-decoration: none;
+color: #333;
+margin-bottom: 0;
+font-size: 15px;
+border-bottom-color: transparent;
+padding: 10px 15px;
+border-radius: 4px 4px 0 0;
+box-shadow: none;
+position: relative;
+word-wrap: break-word;
+}
+
+.upcom:hover, .past:hover {
+background: #e6e0e0;
+}
+
+.line-up {
+list-style-type: none;
+display: flex;
+}
+
+.ico-name {
+
+}
+
+
+#customers {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+padding-left: 15px;
+}
+
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+
+
+#customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #ccc9c9;
+color: #222;
+font-size: 16px;
+font-weight: bold;
+width: 26%;
+padding: 0.5em;
+vertical-align: middle;
+border: 1px solid #e5e5e5;
+border-bottom: 3px solid #ddd;
+font-style: normal;
+text-align: left;
+}
+
+table {
+border: 1px solid #000;
+}
+
+.custo {
+width: 150px;
+}
+
+.tableau {
+    padding: 10px;
+    border: 1px solid #DDD;
+    margin-top: 0;
+    
+}
+
+.more-1 {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.more {
+    border: 1px solid #000;
+    padding: 10px 490px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    background: #383838;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.more:hover {
+    background-color: #3f3d3d;
+    color: #4141a3;
+}
+
+.editor-1 {
+    background-color: #f7f7f7;
+    height: 650px;
+}
+
+.editor {
+    width: 1080px;
+    margin: 30px auto;
+    margin-top: 130px;
+    
+}
+
+.conts {
+    padding-top: 70px;
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: #00527a;
+    font-weight: normal;
+}
+
+.conts-1 {
+    font-size: 12px;
+}
+
+.inline-1, .inline-2, .inline-3, .inline-4 {
+    line-height: 2;
+}
+
+.checklist {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+}
+
+.center {
+    width: 1080px;
+    margin: 30px auto;
+    background-color: #DDD;
+    height: 400px;
+}
+
+.signup {
+    text-align: center;
+    padding-top: 100px;
+    line-height: 2;
+}
+
+.subscripe {
+    color: #797979;
+    border-color: #e6e6e6;
+    background-color: #ffffff;
+    width: 700px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.submit {
+    background-color: #79ab4f;
+    color: #ffffff;
+    padding: 10px 24px;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: auto;
+    border-width: 0;
+    border: 0;
+    outline: 0;
+    word-wrap: break-word;
+    margin: 0;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+.subscripe {
+    color: #797979;
+    border-color: #e6e6e6;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0px;
+    padding: 1em 1.3em;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    margin: 0;
+    vertical-align: baseline;
+    word-wrap: break-word
+}
+
+.center-1 {
+    width: 1080px;
+    margin: 30px auto;
+}
+
+.cent-2 {
+    background-color: #00527a;
+    color;
+    outline: none;
+    font-style: normal;
+    line-height: 1.5em;
+    padding: 2em 0;
+    position: relative;
+    word-wrap: break-word;
+    height: 450px;    
+}
+
+.cent-3 {
+    width: 1080px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 2.5em;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.align {
+    text-decoration: none;
+    color: #adaeb1;
+    font-size: 12.5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.foot {
+    width: 1080px;
+    margin: 30px auto;
+}
+
+.plot {
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.date {
+    width: 100px;
+    font-size: 15px;
+}
+
+
+.upp {
+    transition: opacity .3s ease-in-out;
+}
+
+
+
+.upp:hover {
+    opacity: 0.8;
+}
+    
+
+
+</style>
+<body>
+    <div class="afriq">
+        <div class="afr">
+        <div>
+            <img class="chain_img" src="https://www.blockchainafrica.io/wp-content/uploads/2019/01/cropped-Blockchainafrica.png" width="200" height="50" alt="">
+        </div>
+        <ul class="order">
+            <li class="dropdown">
+                <a class="nav" href="https://www.blockchainafrica.io/category/blockchain-101/" class="dropbtn">Blockchain 101</a>
+                <div class="dropdown-content">
+                    <a  href="#">Blockchain use case</a>
+                    <a  href="#">Blockchain News</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="nav" href="https://www.blockchainafrica.io/category/crypto-news/" class="dropbtn">Crypto News</a>
+                <div class="dropdown-content">
+                    <a href="#">Tech News</a>
+                    <a href="#">AI</a>
+                    <a href="#">News Analysis</a>
+                    <a href="#">All Insights</a>
+                    <a href="#">African Coin Prices</a>
+                    <a >Stablecoin</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="nav" href="https://www.blockchainafrica.io/category/bitcoin-101/" class="dropbtn">Bitcoin 101</a>
+                <div class="dropdown-content">
+                    <a href="#">Coinmarket price</a>
+                    <a href="#">Exchange</a>
+                    <a href="#">Wallet</a>
+                    <a href="#">Mining</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="nav" href="https://www.blockchainafrica.io/events/" class="dropbtn">Events</a>
+                <div class="dropdown-content">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Glossary</a>
+                </div>
+            </li>
+            <li><a class="nav" href="https://www.blockchainafrica.io/category/ask-me-anything/">AMA</a></li>
+            <li class="dropdown">
+                <a class="nav" href="https://www.blockchainafrica.io/advertise/" class="dropbtn">Advertise</a>
+                <div class="dropdown-content">
+                    <a href="#">List ICO</a>
+                </div>
+            </li>
+        </ul>
+        <i class="fa fa-search"></i>
+    </div>
+</div><br><br><br>
+
+    
+</div>
+<div class="sect">
+    <div class="box-1">
+        <div class="crypto">
+            <div class="news">
+            <p><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/category/crypto-news/">Crypto News</a></p>
+        </div>
+            <div class="trade">
+        <h1 style="margin-bottom: 5px; width: 280px;" class="coin"><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/stablecoin-trading-dominates-mondays-crypto-market/">Stablecoin Trading</a></h1>
+        <h1 style="margin-bottom: 5px; width: 320px;" class="coin"><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/stablecoin-trading-dominates-mondays-crypto-market/">Dominates Monday's</a></h1>
+        <h1 style="margin-top: 5px; width: 220px;" class="coin"><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/stablecoin-trading-dominates-mondays-crypto-market/">Crypto Market</a></h1>
+    </div>
+</div>
+    </div>
+       <div class="flex-item">
+    <div class="box-2">
+        <div class="crypto-2">
+            <div class="news-2">
+                <p><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/category/economy/">Economy</a></p>
+            </div>
+            <div class="trade-2">
+                <h2 class="coin-2" style="margin-bottom: 5px; width: 190px;">North Macedonia</h2>
+                <h2 class="coin-2" style="width: 250px; margin-bottom: 5px;">Claims Bomb Threats Come</h2>
+                <h2 class="coin-2" style="margin-top: 5px; width: 150px;">From Russia</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box-3">
+        <div class="crypto-3">
+            <div class="news-3">
+                <p><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/category/economy/">Crypto News</a></p>
+            </div>
+            <div class="trade-3">
+                <h2 class="coin-3" style="margin-bottom: 5px; width: 190px;">Russian Crypto</h2>
+                <h2 class="coin-3" style="width: 200px; margin-bottom: 3.5px;">Industry Association Asks</h2>
+                <h2 class="coin-3" style="margin-top: 3.5px; width: 200px;">Putin to Help With</h2>
+                <h2 class="coin-3" style="margin-top: 3.5px; width: 130px;">Regulations</h2>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    </div>
+
+    <div class="sect-1">
+    <div class="box-4">
+        <div class="crypto-4">
+            <div class="news-4">
+        <p><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/category/economy/">Cryptocurrency</a></p>
+    </div>
+        <div class="trade-4">
+            <h2 class="coin-4" style="margin-bottom: 5px; width: 190px;">Binance to Restrict</h2>
+                <h2 class="coin-4" style="width: 180px; margin-bottom: 3.5px;">Ukranian Hryvnia</h2>
+                <h2 class="coin-4" style="margin-top: 3.5px; width: 120px;">Operations</h2>
+        </div>
+        </div>
+    </div>
+
+    <div class="box-5">
+        <div class="crypto-5">
+            <div class="news-5">
+        <p><a style="text-decoration: none; color: #fff;" href="https://www.blockchainafrica.io/category/economy/">Crypto News</a></p>
+    </div>
+        <div class="trade-5">
+            <h2 class="coin-5" style="margin-bottom: 5px; width: 200px;">Alameda Research</h2>
+                <h2 class="coin-5" style="width: 168px; margin-bottom: 3.5px;">Sues Grayscale</h2>
+                <h2 class="coin-5" style="margin-top: 3.5px; width: 140px;">Investments</h2>
+        </div>
+    </div>
+    </div>
+
+    <div class="box-6">
+        <div class="crypto-6">
+        <div class="trade-6">
+            <h2 class="coin-6" style="margin-bottom: 5px; width: 210px;">Regular Meetings on</h2>
+                <h2 class="coin-6" style="width: 220px; margin-bottom: 3.5px;">CBDCs and Payment</h2>
+                <h2 class="coin-6" style="margin-top: 3.5px; width: 220px;">Innovations to be held by</h2>
+                <h2 class="coin-6" style="margin-top: 3.5px; width: 240px;">US Treasury and White</h2>
+                <h2 class="coin-6" style="margin-top: 3.5px; width: 85px;">House</h2>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <div class="navy">
+        <div class="binance">
+        <div class="russ">
+        <a href="#"><img style="border-radius: 50px;" src="https://www.blockchainafrica.io/wp-content/uploads/2023/02/binance-logo-6219389_640-1.png" width="100px" height=  alt="img"></a>
+        <div>
+        <h3>Binance to Restrict</h3>
+        <h3>Ukranian Hryvnia</h3>
+        <h3>Operations</h3>
+        <a class="date" href="#">March 15, 2023</a>
+    </div>
+    </div>
+
+    <div class="russ">
+        <a href="#"><img style="border-radius: 50px;" src="https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1138831797-612x612-1-90x90.jpg" width="100px" alt="img"></a>
+        <div>
+        <h3>Stablecoin Trading</h3>
+        <h3>Dominates Monday's</h3>
+        <h3>Crypto Market</h3>
+        <a class="date" href="#">March 13, 2023</a>
+        </div>
+    </div>
+
+    <div class="russ">
+        <a href="#"><img style="border-radius: 50px;" src="https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1166821901-612x612-1-90x90.jpg" width="100px" alt="img"></a>
+        <div>
+        <p>North Macedonia Claims</p>
+        <h3>Bomb Threat Come</h3>
+        <h3>From Russia</h3>
+        <a class="date" href="#">March 10, 2023</a>
+    </div>
+    </div>
+</div>
+    </div>
+
+    <div class="blog-post">
+    <div class="blog">
+        <div class="post"></div>
+        <h1 class="rcent">Recent Post &#8594;</h1><br><br>
+        <div class="ctrl-side">
+        <div class="aside">
+
+         <div class="crypt">
+            <a class="crypt-img" href="#">Cryptocurrency</a>
+         </div>
+            <h2 style="width: 250px;"><a class="cryp" href="#">Fednow Payment Service to Launch in July</a></h2>
+            <a>MARCH 10, 2023</a><br><br>
+            <div class="crypt-">
+            <p style="width: 230px; font-weight: 400;
+            font-size: 18px;
+            line-height: 1.65em;
+            margin-top: 0.5em;">The Fednow payment service is about to be launched by the U.S. central bank and in a recen...</p>
+        </div><br>
+        </div>
+
+        
+        <div class="aside">
+            <div class="crypt-1">
+               <a class="crypt-img" href="#">Cryptocurrency</a>
+            </div>
+            <h2 style="width: 250px;"><a class="cryp" href="#">China Plotting to Become a Metaverse Tech Leader During 2023</a></h2>
+               <a>MARCH 10, 2023</a><br>
+               <div class="crypt-">
+               <p style="width: 220px; font-weight: 400;
+               font-size: 18px;
+               line-height: 1.65em;
+               margin-top: 0.5em;">Despite the worldwide interest of the metaverse seems to be waning, China is focused at be...</p>
+           </div><br>
+           </div>
+
+
+           <div class="aside-1">
+            <div class="crypt-2">
+               <a class="crypt-img" href="#">Cryptocurrency</a>
+            </div>
+                <h2 style="width: 250px;"><a class="cryp" href="#">Africa-Focused Fintech Chipper Cash Weighs Sale of Business</a></h2>
+               <a>MARCH 10, 2023</a><br><br>
+               <div class="crypt-">
+               <p style="width: 220px; font-weight: 400;
+               font-size: 18px;
+               line-height: 1.65em;
+               margin-top: 0.5em;">According to a source, Chipper Cash, the African Fintech backed by Silicon Valley Bank (SV...</p>
+           </div>
+        </div>
+           </div>
+
+
+           <div class="ctrl-side">
+            <div class="aside-2">
+             <div class="crypt-3">
+                <a class="crypt-img" href="#">Cryptocurrency</a>
+             </div>
+                <h2 style="width: 250px;"><a class="cryp" href="#">Binance to Restrict Ukrainian Hryvnia Operations</a></h2>
+                <a>MARCH 10, 2023</a><br><br>
+                <div class="crypt-">
+                <p style="width: 220px; font-weight: 400;
+                font-size: 18px;
+                line-height: 1.65em;
+                margin-top: 0.5em;">Binance prides itself as the leading digital asset exchange in the world in terms of tradi...</p>
+            </div>
+            </div>
+            
+            
+            <div class="aside-3">
+                <div class="crypt-4">
+                   <a class="crypt-img" href="#">Cryptocurrency</a>
+                </div>
+                   <h2 style="width: 250px;"><a class="cryp" href="#">Stablecoin Trading Dominates Monday’s Crypto Market</a></h2>
+                   <a>MARCH 10, 2023</a><br><br>
+                   <div class="crypt-">
+                   <p style="width: 220px; font-weight: 400;
+                   font-size: 18px;
+                   line-height: 1.65em;
+                   margin-top: 0.5em;">Stablecoin experienced significant trade volumes on monday after USDC over the weekend had...</p>
+               </div>
+               </div>
+
+    
+               <div class="aside-4">
+                <div class="crypt-5">
+                   <a class="crypt-img" href="#">Cryptocurrency</a>
+                </div>
+                   <h2 style="width: 198px;"><a class="cryp" href="#">North Macedonia Claims Bomb Threats Come From Russia</a></h2>
+                   <a>MARCH 10, 2023</a><br><br>
+                   <div class="crypt-">
+                   <p style="width: 220px; font-weight: 400;
+                   font-size: 18px;
+                   line-height: 1.65em;
+                   margin-top: 0.5em;">According to a statement by a top government official, there’s been several bomb thr...</p>
+               </div>
+            </div>
+               </div>
+
+
+               <div class="ctrl-side">
+                <div class="aside-5">
+                 <div class="crypt-6">
+                    <a class="crypt-img" href="#">Cryptocurrency</a>
+                 </div>
+                    <h2 style="width: 225px;"><a class="cryp" href="#">Russian Crypto Industry Association Asks Putin to Help With Regulations</a></h2>
+                    <a>MARCH 10, 2023</a><br><br>
+                    <div class="crypt-">
+                    <p style="width: 220px; font-weight: 400;
+                    font-size: 18px;
+                    line-height: 1.65em;
+                    margin-top: 0.5em;">There’s been a call on Vladimir Putin, the President of Russia by the The Russian As...</p>
+                </div>
+                </div>
+
+                
+                <div class="aside-6">
+                    <div class="crypt-7">
+                       <a class="crypt-img" href="#">Cryptocurrency</a>
+                    </div>
+                       <h2 style="width: 200px;"><a class="cryp" href="#">Alameda Research Sues Grayscale Investments</a></h2>
+                       <a>MARCH 10, 2023</a><br><br>
+                       <div class="crypt-">
+                       <p style="width: 220px; font-weight: 400;
+                       font-size: 18px;
+                       line-height: 1.65em;
+                       margin-top: 0.5em;">On March 6, 2023, a press release was issued that Alameda Research and FTX debtors, the no...</p>
+                   </div>
+                   </div>
+
+        
+                   <div class="aside-7">
+                    <div class="crypt-8">
+                       <a class="crypt-img" href="#">Cryptocurrency</a>
+                    </div>
+                   <h2 style="width: 250px;"><a class="cryp" href="#">Regular Meetings on CBDCs and Payment Innovations to be Held by US Treasury and White House
+                </a></h2>
+                       <a>MARCH 10, 2023</a><br><br>
+                       <div class="crypt-">
+                       <p style="width: 220px; font-weight: 400;
+                       font-size: 18px;
+                       line-height: 1.65em;
+                       margin-top: 0.5em;">Neille Liang, the U.S. Treasury’s undersecretary for domestic finance gave a speech...</p>
+                   </div>
+                </div>                   
+                   
+
+                   </div><br><br>
+                   <a href="#" class="view_1">View more recent posts</a>
+           
+    </div>
+    <div style="margin-left: 20px;" class="comm">
+        <p style="text-transform: uppercase; letter-spacing: 1px; word-wrap: break-word;">Join our community</p><br>
+         <a href="https://www.facebook.com/BlockchainAfric/"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/facebook.png" width="59px" height="59px" alt=""></a>               
+         <a href="https://twitter.com/BlockchainAf"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/twitter.png" width="59px" height="59px" alt=""></a>               
+         <a href="https://www.instagram.com/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/instagram.png" width="59px" height="59px" alt=""></a>               
+         <a href="https://www.instagram.com/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/youtube.png" width="59px" height="59px" alt=""></a>              
+         <a href="https://www.reddit.com/user/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/reddit.png" width="59px" height="59px" alt=""></a>              
+         <a href="https://www.linkedin.com/company/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/linkedin.png" width="59px" height="59px" alt=""></a>              
+         <a href="https://medium.com/@blockchainafrica"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/medium.png" width="59px" height="59px" alt=""></a>           
+         <a href="https://telegram.me/cryptonomicsafrica"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/telegram.png" width="59px" height="59px" alt=""></a>           
+         <a href="https://www.blockchainafrica.io/feed/"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/rss-feed.png" width="59px" height="59px" alt=""></a><br><br>
+         
+         <p class="trend">Trending Posts</p><br><br>
+
+         <div class="binance-1">
+            <div class="russ">
+            <a href="#"><img style="border-radius: 50px;" src="https://www.blockchainafrica.io/wp-content/uploads/2023/02/binance-logo-6219389_640-1.png" width="100px" height=  alt="img"></a>
+            <div>
+            <a class="plot">China Plotting to Become a Metaverse Tech Leader During 2023</a><br>
+            <a class="date" href="#">March 15, 2023</a>
+        </div>
+        </div><br>
+    
+        <div class="russ">
+            <a href="#"><img style="border-radius: 50px;" src="https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1138831797-612x612-1-90x90.jpg" width="100px" alt="img"></a>
+            <div>
+            <a class="plot">Africa-Focused Fintech Chipper Cash Weighs Sale of Business</a><br>
+            <a class="date" href="#">March 13, 2023</a>
+            </div>
+        </div><br>
+    
+        <div class="russ">
+            <a href="#"><img style="border-radius: 50px;" src="https://www.blockchainafrica.io/wp-content/uploads/2023/03/istockphoto-1166821901-612x612-1-90x90.jpg" width="100px" alt="img"></a>
+            <div>
+            <a class="plot">Binance to Restrict Ukrainian Hryvnia Operations</a><br>
+            <a class="date" href="#">March 10, 2023</a><br><br>
+            
+        </div>
+        
+    
+    </div><br><br>
+    <div class="views">
+    <a href="#" class="view">View more posts</a>
+   </div>
+    </div>
+    
+    </div>
+    </div><br><br>
+
+    <div class="ico">
+        <div class="ico-1">
+        <a class="upper" href="#"><strong class="span-1">Submit Your ICO/IEO</strong></a><br><BR>
+            <ul class="line-up">
+          <li>      
+        <a href="#" class="active">Active ICO</a></li>
+        <li>
+    <a href="#" class="upcom">Upcoming ICO</a>
+</li>
+<li>
+    <a href="#" class="past">past ICO</a>
+</li><br><br>
+</ul>
+
+<div class="tableau">
+<table id="customers">
+    
+    <tr class="custo">
+        <th>Name</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="ico-name">
+                <img src="https://www.blockchainafrica.io/wp-content/plugins/crypto-ico-list-widget-pro/assets/images/ico-icon.png" alt="img" width="" height=""><br>
+                <a href="#">Crypto</a><br>
+                <a href="#">Commonwealth</a><br>
+                <a href="#">(Comm)</a><br>
+                <a href="#">Platform: Ethereum</a>
+            </div>
+        </td>
+        <td>
+            <div>March 01, 2020</div>
+            <div>3 years ago</div>
+        </td>
+        <td>
+            <div>December 03, 2025</div>
+            <div>In 2 years</div>
+        </td>
+        <td>
+            <div>Singapore</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="ico-name">
+                <img src="https://res.cloudinary.com/cryptoicolist/image/upload/ico-logo/neuron_ico.png" alt="img" width="" height=""><br>
+                <a href="#">TokenStub (Stub)</a><br>
+                <a href="#">Platform: Ethereum</a>
+            </div>
+        </td>
+        <td>
+            <div>August 23, 2017</div>
+            <div>5 years ago</div>
+        </td>
+        <td>
+            <div>N/A</div>
+        </td>
+        <td>
+            <div>USA</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="ico-name">
+                <img src="https://res.cloudinary.com/cryptoicolist/image/upload/ico-logo/tokenstub_ico.png" alt="img" width="" height=""><br>
+                <a href="#">Crypto</a><br>
+                <a href="#">Commonwealth</a><br>
+                <a href="#">(Comm)</a><br>
+                <a href="#">Platform: Ethereum</a>
+            </div>
+        </td>
+        <td>
+            <div>March 01, 2020</div>
+            <div>3 years ago</div>
+        </td>
+        <td>
+            <div>December 03, 2025</div>
+            <div>In 2 years</div>
+        </td>
+        <td>
+            <div>Singapore</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="ico-name">
+                <img src="https://www.blockchainafrica.io/wp-content/plugins/crypto-ico-list-widget-pro/assets/images/ico-icon.png" alt="img" width="" height=""><br>
+                <a href="#">BitBase (BTB)</a><br>
+                <a href="#">Platform: Ethereum</a>
+            </div>
+        </td>
+        <td>
+            <div>September 10, 2017</div>
+            <div>3 years ago</div>
+        </td>
+        <td>
+            <div>N/A</div>
+        </td>
+        <td>
+            <div>Germany</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="ico-name">
+                <img src="https://res.cloudinary.com/cryptoicolist/image/upload/ico-logo/r-pay_ico.png" alt="img" width="" height=""><br>
+                <a href="#">Crypto</a><br>
+                <a href="#">Commonwealth</a><br>
+                <a href="#">(Comm)</a><br>
+                <a href="#">Platform: Ethereum</a>
+            </div>
+        </td>
+        <td>
+            <div>March 01, 2020</div>
+            <div>3 years ago</div>
+        </td>
+        <td>
+            <div>December 03, 2025</div>
+            <div>In 2 years</div>
+        </td>
+        <td>
+            <div>Singapore</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="ico-name">
+                <img src="https://res.cloudinary.com/cryptoicolist/image/upload/ico-logo/starmine_ico.png" alt="img" width="" height=""><br>
+                <a href="#">R Pay (R Token)</a><br>
+                <a href="#">Platform: Ethereum</a>
+            </div>
+        </td>
+        <td>
+            <div>September 25, 2017</div>
+            <div>3 years ago</div>
+        </td>
+        <td>
+            <div>N/A</div>
+        </td>
+        <td>
+            <div>Netherlands</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="ico-name">
+                <img src="https://res.cloudinary.com/cryptoicolist/image/upload/ico-logo/tokenstub_ico.png" alt="img" width="" height=""><br>
+                <a href="#">Starmine (SME)</a><br>
+                <a href="#">Platform: Ethereum</a>
+            </div>
+        </td>
+        <td>
+            <div>September 30, 2017</div>
+            <div>3 years ago</div>
+        </td>
+        <td>
+            <div>N/A</div>
+        </td>
+        <td>
+            <div>USA</div>
+        </td>
+    </tr>
+    
+
+</table>
+<div class="more-1">
+<a href="#" class="more">view More</a>
+</div>
+</div>
+    </div>
+
+
+    <div class="editor-1">
+    <div class="editor">
+     <h1 class="conts">Editor's Content</h1><br>
+     <p class="conts-1">CHECK OUT OUR BLOG POST</p><br><br>
+
+     <div class="checklist">
+     <div class="inline-1">
+        <a href="#"><img class="upp" src="https://www.blockchainafrica.io/wp-content/uploads/2019/06/blockchain.jpg" width="250"></a>
+        <h1 style="font-size: 20px;">BTC-Predict</h1>
+        <p style="width: 250px;">Predict and win in secs the Bitcoin price change. Brought to you by coinratecap</p>
+     </div>
+     <div class="inline-2">
+        <a href="#"><img class="upp" src="https://www.blockchainafrica.io/wp-content/uploads/2019/01/Cryptocurrency.png" width="250px"></a>
+        <h1 style="font-size: 20px;">Cryptocurrency</h1>
+        <p style="width: 250px;">Get juicy insights into what Bitcoin is all about.</p>
+     </div>
+     <div class="inline-3">
+        <a href="#"><img class="upp" src="https://www.blockchainafrica.io/wp-content/uploads/2019/01/Blockchain.png" width="250px"></a>
+        <h1 style="font-size: 20px;">Stablecoin</h1>
+        <p>Get juicy insights on stablecoins.</p>
+     </div>
+     <div class="inline-4">
+        <a href="#"><img class="upp" src="https://www.blockchainafrica.io/wp-content/uploads/2019/01/Cryptocurrency-exchange.png" width="250px"></a>
+        <h1 style="font-size: 20px;">Cryptocurrency Mining</h1>
+        <p style="width: 300px;">Get juicy insights on cryptocurrency mining</p>
+     </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    <div  class="center">
+        <div class="signup">
+            <h1>Sign Up For Newsletters</h1>
+            <p>Subscribe to our newsletter for latest insights at your finger tips</p><br>
+            <form target="_blank" action="https://www.blockchainafrica.io/mailster/subscribe" method="post">
+            <label>
+                Email
+            </label>
+            <input class="subscripe" name="email" type="email" required><br>
+            <input type="checkbox" name="_gdpr" value="1"> I agree to the privacy policy and terms. (<span style="color: #77ac49;">Link</span>)<br>
+            <input type="Subscripe" value="Subscribe" class="submit">
+        </form>
+        </div>
+        
+    </div>
+     
+    <div class="center-1">
+    <p style="text-transform: uppercase;">Join our community</p>
+    <a href="https://www.facebook.com/BlockchainAfric/"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/facebook.png" width="59px" height="59px" alt=""></a>               
+         <a href="https://twitter.com/BlockchainAf"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/twitter.png" width="59px" height="59px" alt=""></a>               
+         <a href="https://www.instagram.com/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/instagram.png" width="59px" height="59px" alt=""></a>               
+         <a href="https://www.instagram.com/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/youtube.png" width="59px" height="59px" alt=""></a>              
+         <a href="https://www.reddit.com/user/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/reddit.png" width="59px" height="59px" alt=""></a>              
+         <a href="https://www.linkedin.com/company/blockchainafr"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/linkedin.png" width="59px" height="59px" alt=""></a>              
+         <a href="https://medium.com/@blockchainafrica"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/medium.png" width="59px" height="59px" alt=""></a>           
+         <a href="https://telegram.me/cryptonomicsafrica"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/telegram.png" width="59px" height="59px" alt=""></a>           
+         <a href="https://www.blockchainafrica.io/feed/"><img src="https://www.blockchainafrica.io/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/rss-feed.png" width="59px" height="59px" alt=""></a><br><br>
+         
+</div>
+
+<div class="cent-2">
+    <div class="cent-3">
+        <div>
+        <img class="chain_img" src="https://www.blockchainafrica.io/wp-content/uploads/2019/01/cropped-Blockchainafrica.png" width="200" height="50" alt="">
+    </div><br>
+    <div class="contact">
+    <p>CONTACT</p>
+    <ul>
+    <li><a style="color: #fff;" href="#" class="align">About Us</a></li>
+    <li><a style="color: #fff;" href="#" class="align">Contact us</a></li>
+    <li><a style="color: #fff;" href="#" class="align">Our Services</a></li>
+    </ul>
+    </div>
+    <div>ADVERTISE HERE</div>
+    <div class="contact-1">
+        <p>INSIGHTS</p>
+        <ul>
+        <li><a style="color: #fff;" href="#" class="align">African Coin Analysis</a></li>
+        <li><a style="color: #fff;" href="#" class="align">Blockchain</a></li>
+        <li><a style="color: #fff;" href="#" class="align">Cryptocurrency</a></li>
+        <li><a style="color: #fff;" href="#" class="align">Exchange</a></li>
+        <li><a style="color: #fff;" href="#" class="align">Press Release</a></li>
+        <li><a style="color: #fff;" href="#" class="align">Submit Your Story</a></li>
+        </ul>
+        </div>
+        <div>
+            <p style="width: 400px; color: #adaeb1;">We aim to go beyond a mere discussion of the different types of cryptocurrencies available as an investment option to an economic analysis of cryptocurrencies and the practicality of using the Blockchain in Africa’s development.</p><br><br>
+
+            <p style="color: #adaeb1;">Come let’s learn together!</p>
+        </div>
+    </div>
+    <footer class="foot">
+    <span style="font-size: 12.5px; color: #adaeb1;">BlockchainAfrica. All rights reserved.</span> 
+    <a class="align" href="#">Privacy Policy</a>
+    <a class="align" href="#">Disclaimer</a>
+    <a class="align"href="#">Sitemap</a>
+</footer>
+</div>
+    
+</body>
+</html>
